@@ -1,0 +1,205 @@
+Sub data_cleaning()
+'
+' data_cleaning Macro
+'
+
+'
+    ActiveCell.Columns("A:A").EntireColumn.Select
+    Selection.End(xlToRight).Select
+    ActiveCell.Offset(0, -1).Columns("A:F").EntireColumn.Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    ActiveCell.Columns("A:A").EntireColumn.Select
+    ActiveCell.Columns("A:A").EntireColumn.EntireColumn.AutoFit
+    ActiveCell.Columns("A:A").EntireColumn.EntireColumn.AutoFit
+    ActiveCell.Offset(0, 2).Columns("A:A").EntireColumn.EntireColumn.AutoFit
+    ActiveCell.Offset(0, 3).Columns("A:A").EntireColumn.EntireColumn.AutoFit
+    ActiveCell.Offset(0, 5).Columns("A:A").EntireColumn.Select
+    ActiveCell.Offset(0, -3).Columns("A:A").EntireColumn.ColumnWidth = 25.5
+    ActiveCell.Offset(0, -2).Columns("A:A").EntireColumn.ColumnWidth = 34
+    ActiveCell.Columns("A:A").EntireColumn.Select
+    Selection.NumberFormat = "mm/dd/yyyy hh:mm"
+    Selection.ColumnWidth = 17.88
+    ActiveCell.Offset(0, -5).Columns("A:A").EntireColumn.Select
+    Selection.Delete Shift:=xlToLeft
+End Sub
+Sub merge_visitor_id()
+'
+' merge_visitor_id Macro
+'
+
+'
+    Columns("B:C").Select
+End Sub
+Sub color_columns()
+'
+' color_columns Macro
+'
+
+'
+    Range("A1:E1").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent2
+        .TintAndShade = 0.399975585192419
+        .PatternTintAndShade = 0
+    End With
+End Sub
+
+
+' Now we can enter these values
+Range("A2").Value = eid
+Range("A2").Offset(0, 1).Select
+Selection.Value = name
+
+Selection.Offset(0, 1).Select
+Selection.Value = age
+
+Selection.Offset(0, 1).Select
+Selection.Value = email
+
+Selection.Offset(0, 1).Select
+Selection.Value = dob
+
+Selection.Offset(0, 1).Select
+Selection.Value = married
+
+Selection.Offset(0, 1).Select
+Selection.Value = location
+
+ActiveSheet.Cells.EntireColumn.AutoFit
+
+End Sub
+
+Sub variables()
+
+Dim eid As String
+
+' Give it a Value
+eid = "EMP001"
+
+
+Dim name As String
+name = "Himanshu Aggarwal"
+
+Dim age As String
+age = "29"
+
+Dim email As String
+email = "Himanshu.Aggarwal@ironhack.com"
+
+Dim dob As Date
+dob = Format("4/22/1992", "Short Date")
+' dob = Format("4/22/1992", "Long Date")
+' dob = Format("4/22/1992", "yyyy/mm/dd")
+
+Dim married As Boolean
+name = False
+
+Dim location As String
+location = "Miami"
+
+
+End Sub
+
+
+Sub macro_loop_ifElse()
+
+Call variables
+
+Range("A1").Select
+Dim x As String
+x = LCase(Range("A1").Value)
+
+Do
+    If x = "name" Then
+    Selection.Offset(1, 0).Value = name
+    Selection.Offset(0, 1).Select
+    
+    ElseIf x = "eid" Then
+    Selection.Offset(1, 0).Value = eid
+    Selection.Offset(0, 1).Select
+    
+    ElseIf x = "age" Then
+    Selection.Offset(1, 0).Value = age
+    Selection.Offset(0, 1).Select
+    
+    ElseIf x = "email" Then
+    Selection.Offset(1, 0).Value = email
+    Selection.Offset(0, 1).Select
+
+    ElseIf x = "dob" Then
+    Selection.Offset(1, 0).Value = married
+    Selection.Offset(0, 1).Select
+    
+    ElseIf x = "location" Then
+    Selection.Offset(1, 0).Value = location
+    Selection.Offset(0, 1).Select
+    x = LCase(Selection.Value)
+    
+Loop While IsEmpty(Selection) = True
+
+End Sub
+------------------------------------------------------------------------------
+Sub insert_data()
+
+' The code does not have to be indented but it improves readability
+   ' Insert a new row
+    Range("1:1").Select
+    Selection.Insert
+    
+   ' Selecting a cell and giving a value to that selection
+    Range("A1").Select
+    Selection.Value = "CONTROLN"
+    
+    Range("B1").Select
+    Selection.Value = "STATE"
+    
+   ' We can give a value directly as well. But selecting the cell first is very
+   ' useful as we will see later
+   
+    Range("C1").Value = "GENDER"
+    Range("D1").Value = "HV1"
+    Range("E1").Value = "IC1"
+    Range("F1").Value = "IC2"
+    Range("G1").Value = "AVGGIFT"
+    
+End Sub
+
+
+Sub format_data()
+
+Range("1:1").Font.Bold = True
+
+Range("A1").CurrentRegion.Select
+' This is like going to cell A1 and then using Ctrl + A
+
+' Aligning the text to center. You can also use xlLeft, xlRight based on the requirement
+Range("A1").CurrentRegion.Select
+Selection.HorizontalAlignment = xlCenter
+
+' Adding a border to the data
+Selection.Borders.LineStyle = xlContinuous
+
+' Deleting columns that are not required
+' Here we will see how to select multiple elements at the same time
+Range("A:A, D:F").Select
+Selection.Delete
+
+
+' Changing the color of cells
+' Break down the next piece of code. Show what Range("A1").End(xlToRight).select does
+Range(Range("A1"), Range("A1").End(xlToRight)).Select
+Selection.Interior.Color = vbYellow
+
+End Sub

@@ -1,0 +1,212 @@
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Labs (master)
+$ cd
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~
+$ cd Desktop/
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop (master)
+$ ls
+ Bootcamp/
+'Dear Hiring Manager.docx'
+ IronHack/
+ Labs/
+ Mid-Project-Credit-Card/
+ Mubarik_cover_letter.pdf
+'New Text Document.txt'
+'Page    2 Table  1+ (amzn_stock)_Page    2 Table  1.csv'
+ Project_A_cover_letter.pdf
+ README.md
+ Rows_customer_solutions_position_cover_letter.pdf
+ Slack.lnk*
+ activity8.2.html
+ class_exercises/
+ class_files/
+ cover_letter.odt
+ cover_letter.pdf
+ desktop.ini
+ hellow_world.html
+ new.html
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop (master)
+$ cd Bootcamp/
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp (master)
+$ git clone https://github.com/MubarikIbrahim/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Total 40 (delta 0), reused 0 (delta 0), pack-reused 40
+Receiving objects: 100% (40/40), 10.91 KiB | 1.09 MiB/s, done.
+Resolving deltas: 100% (14/14), done.
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp (master)
+$ ls
+BER-DAFT-JAN21/  Ironhack-Project-1/  lab-bash/
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp (master)
+$ cd lab-bash/
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ echo "Hello world"
+Hello world
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ mkdir new_dir
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  new_dir/  outputs/  readme.md
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ rm -rf new_dir
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ cp lorem/sed.txt lorem-copy/sed.txt
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ cd lorem-copy/
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash/lorem-copy (master)
+$ ls
+dummy_file.txt  sed.txt
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash/lorem-copy (master)
+$ cd ~
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~
+$ cd Desktop/Bootcamp/lab-bash/
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ cp lorem/at.txt lorem-copy/; cp lorem/lorem.txt lorem-copy/
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ cat lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ cat lorem/at.txt; cat lorem/lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ head -3 lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ tail -3 lorem-copy/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ echo "Homo homini lupus." >> lorem-copy/sed.txt
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ tail -3 lorem-copy/sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ sed -i -r 's/et/ET/g' sed.txt;
+sed: can't read sed.txt: No such file or directory
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ sed -i -r 's/et/ET/g' sed.txt; cat sed.txt
+sed: can't read sed.txt: No such file or directory
+cat: sed.txt: No such file or directory
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ sed -i -r 's/et/ET/g' sed.txt;
+sed: can't read sed.txt: No such file or directory
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ cd lorem-copy/
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt  sed.txt
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash/lorem-copy (master)
+$ sed -i -r 's/et/ET/g' sed.txt;
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash/lorem-copy (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis ET quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amET, consectETur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore ET dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash/lorem-copy (master)
+$ whoami
+Mubarik
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash/lorem-copy (master)
+$ pwd
+/c/Users/Mubarik/Desktop/Bootcamp/lab-bash/lorem-copy
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash/lorem-copy (master)
+$ ls lorem/*.txt
+ls: cannot access 'lorem/*.txt': No such file or directory
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash/lorem-copy (master)
+$ cd
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~
+$ ~cd
+bash: ~cd: command not found
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~
+$ cd ~
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~
+$ cd ~/Desktop/Bootcamp/lab-bash/
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)
+$ ls lorem/*.txt
+lorem/at.txt  lorem/lorem.txt  lorem/sed.txt
+
+Mubarik@DESKTOP-7S9M08L MINGW64 ~/Desktop/Bootcamp/lab-bash (master)

@@ -1,0 +1,29 @@
+1. 
+select *, length(FIRST_NAME) + length(LAST_NAME) as combined 
+from customer
+where length(FIRST_NAME) + length(LAST_NAME) < 12
+order by combined, first_name, last_name, ID;
+2
+select * from department;
+select * from employee;
+
+select *, count(e.name) from department as d
+left join employee as e
+on d.id = e.dept_id
+group by d.name;
+3.
+select * from employee2;
+select * from employee2_uin;
+
+select e.id, uin, e.name, e.age from employee2_uin as u
+left join employee2 as e
+on u.id = e.id
+where age < 25
+order by e.name, e.id;
+
+4. 
+select a.name, a.salary, b.name, b.salary 
+from employee3 as a
+join employee3 as b
+on a.id <> b.id and a.salary < b.salary
+order by a.salary, b.salary;
